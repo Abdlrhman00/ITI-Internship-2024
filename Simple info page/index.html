@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - ITI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#eid">Eid</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#cv">CV</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Abdulrahman Muhammad</h1>
+        <img src="/Imgs/profile pic.jpg"  alt="Your Image">
+        <p>I am a Computer Science student with a passion for programming and web development. 
+            Proficient in JavaScript, Node.js, Express.js, and MySQL, 
+            I specialize in creating dynamic and responsive web applications. 
+            Beyond my academic pursuits, I have a keen interest in IT and cybersecurity. 
+            Continuously expanding my knowledge and skills, I am committed to staying abreast of the 
+            latest advancements in technology.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="hobby">
+            <img src="./Imgs/depositphotos_179015610-stock-photo-muscular-man-working-out-gym.jpg" alt="Hobby 1">
+            <div class="description">Gym and Fitness</div>
+        </div>
+        <div class="hobby">
+            <img src="./Imgs/kelly-pash-texas--1024x683.jpg" alt="Hobby 2">
+            <div class="description">Swimming</div>
+
+        </div>
+        <!-- Repeat for more hobbies -->
+    </section>
+
+    <section id="eid">
+        <h2>Eid Mubarak!</h2>
+        <img id="eid-image" src="./Imgs/eid.png" alt="Eid Image">
+        <div id="eid-message" style="display: none;">
+            <textarea id="txt-area" placeholder="Write a kind message..."></textarea>
+            <br>
+            <button onclick="submitMessage()">Submit</button>
+        </div>
+        <div id="thank-you-container" style="display: none;">
+
+        </div>
+        
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Your Name">
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Your Email">
+            
+            <label for="msg">Message:</label>
+            <textarea name="message" placeholder="Your Message"></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        
+        <di class="social-media">
+            <a href="https://linkedin.com/in/abdulrahman-muhammad-361a982ab/" target="_blank">
+                <img src="/Imgs/circle-linkedin-512-ezgif.com-jpg-to-png-converter.jpg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Abdlrhman00" target="_blank">
+                <img src="/Imgs/25231.png" alt="GitHub">
+            </a>
+
+        </div>
+    </section>
+
+    <section id="travel">
+        <h2>Countries I Wish to Visit</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="/Imgs/al-qiblyMosque.jpg" alt="Country 1">
+                    <p>فلسطين</p>
+                </div>
+                <div class="slide">
+                    <img src="/Imgs/makka.jpg" alt="Country 2">
+                    <p>الممكلة العربية السعودية</p>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="slider-btn prev-btn" onclick="moveSlider('prev')">Prev</button>
+            <button class="slider-btn next-btn" onclick="moveSlider('next')">Next</button>
+        </div>
+    </section>
+    
+    
+
+    <section id="cv">
+        <center> <h2>My CV</h2> </center>
+        <div class="education">
+            <h3>Education</h3>
+            <p>Fayoum University</p>
+            <p>Bachelor of Science in Computer Science | Expected Aug 2025</p>
+            <ul>
+                <li>Introduction to Programming (C++)</li>
+                <li>OOP (C++)</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Mathematics, Discrete Mathematics</li>
+                <li>Probability & Statistics</li>
+                <li>Software Engineering</li>
+                <li>Database Management</li>
+                <li>Operation System</li>
+                <li>Computer Architecture</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="skills">
+            <h3>Skills</h3>
+            <p>Languages: HTML/CSS, JavaScript, Python, C/C++, SQL, Matlab</p>
+            <p>Frameworks: NodeJs, ExpressJs</p>
+            <p>Databases: MySQL</p>
+            <p>Tools: Git/GitHub, VS Code, MS Office (Word, PowerPoint, Excel)</p>
+        </div>
+        <hr>
+    
+        <div class="projects">
+            <h3>Projects</h3>
+            <p>BookWise ‘Your Literary Companion’</p>
+            <p>Developed "BookWise: Your Literary Companion," an online platform for book discovery and engagement.</p>
+            <p>Technologies: HTML, CSS, JavaScript, EJS template engine, NodeJs, ExpressJs, MySQL.</p>
+            <p>Tools & Practices: Git, GitHub, Agile, ClickUp.</p>
+    
+            <p>Pong Game</p>
+            <p>Developed a classic Pong game with AI integration using Python and the Pygame library.</p>
+            <p>Technologies: Python, Pygame library, Tkinter library</p>
+            <p>Tools & Practices: Git, GitHub.</p>
+        </div>
+        <hr>
+    
+        <div class="work-experience">
+            <h3>Work Experience</h3>
+            <p>Freelance Document/Presentation Design and Training Services | Apr 2023 - Present</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Developed professional documents and presentations using MS Word and PowerPoint for diverse clients.</li>
+                <li>Collaborated closely with clients to understand their needs and deliver tailored solutions.</li>
+                <li>Provided training sessions for clients on MS Office programs and specialized topics in technology, programming, and cybersecurity.</li>
+                <li>Ensured consistent branding and quality across all deliverables.</li>
+            </ul>
+            <p>Achievements:</p>
+            <ul>
+                <li>Streamlined document creation processes, improving efficiency and client satisfaction.</li>
+                <li>Received positive feedback and referrals for exceptional service, attention to detail, and expertise in specialized training areas.</li>
+            </ul>
+            <p>Key Skills Developed:</p>
+            <ul>
+                <li>Proficiency in MS Word and PowerPoint, including advanced formatting, template design, and training delivery.</li>
+                <li>Strong communication and client management skills.</li>
+                <li>Attention to detail and commitment to quality.</li>
+                <li>Expertise in providing specialized training in technology, programming, and cybersecurity.</li>
+            </ul>
+        </div>
+        <hr>
+    
+        <div class="certificates">
+            <h3>Certificates</h3>
+            <p>JavaScript (Mahara Tech – ITIMooca)</p>
+            <ul>
+                <li>Proficient in utilizing JavaScript to represent data effectively with variables, control program flow, and debug code efficiently.</li>
+                <li>Skilled in manipulating the Document Object Model (DOM) and implementing event handling techniques to create dynamic and interactive web pages.</li>
+                <li>Mastered the principles of Object-Oriented Programming (OOP) in JavaScript, including creating custom objects, understanding prototype inheritance, and implementing advanced concepts such as closures and abstract classes.</li>
+            </ul>
+    
+            <p>Technical Support Fundamentals (Google)</p>
+            <ul>
+                <li>Acquired a comprehensive understanding of computer hardware, software, and networking principles.</li>
+                <li>Developed proficiency in troubleshooting common IT issues and providing effective solutions.</li>
+                <li>Enhanced customer service skills, including effective communication and problem-solving techniques.</li>
+            </ul>
+    
+            <p>The Bits and Bytes of Computer Networking (Google)</p>
+            <ul>
+                <li>Acquired in-depth knowledge of computer networking fundamentals, covering topics such as network architecture, protocols, and communication principles.</li>
+                <li>Mastered the intricacies of TCP/IP communications, including understanding standard protocols and their role in facilitating network data exchange.</li>
+                <li>Explored advanced networking concepts, including DNS, DHCP, and cloud computing.</li>
+            </ul>
+        </div>
+        <hr>
+    
+        <div class="additional-courses">
+            <h3>Additional Courses</h3>
+            <p>Node.js Tutorial for Beginners (Programming with Mosh – YouTube)</p>
+            <ul>
+                <li>Learned Node.js fundamentals, including module management, file system operations, and event handling, as well as HTTP module usage for server-side development.</li>
+            </ul>
+            <p>Learn Express JS (WebDevSimplified – YouTube)</p>
+            <ul>
+                <li>Mastered advanced routing, middleware implementation, and data parsing in ExpressJS, a leading Node.js web server framework.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <script>
+        setTimeout(() => {
+            document.getElementById('eid-image').style.display = 'none';
+            document.getElementById('eid-message').style.display = 'block';
+        }, 5000);
+
+        function submitMessage() {
+            document.getElementById('eid-image').style.display = 'none';
+            document.getElementById('eid-message').style.display = 'none';
+
+            var thankYouContainer = document.getElementById('thank-you-container');
+            thankYouContainer.style.display = 'block';
+
+            var thankYouMessage = '<p>Thank you</p>';
+            thankYouContainer.innerHTML = thankYouMessage;
+        }
+
+        const slider = document.querySelector('.slider');
+        function moveSlider(direction) {
+    const slider = document.querySelector('.slider');
+    const slideWidth = slider.querySelector('.slide').offsetWidth;
+    
+    if (direction === 'next') {
+        slider.style.transform = `translateX(-${slideWidth}px)`;
+    } else if (direction === 'prev') {
+        slider.style.transform = 'translateX(0)';
+    }
+}
+
+
+    </script>
+</body>
+</html>

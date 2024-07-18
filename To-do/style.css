@@ -1,0 +1,120 @@
+/* Reset styles and basic typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically if needed */
+    margin-bottom: 20px;
+}
+
+#newTask {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some space between input and button */
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Filter dropdown */
+#filter {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Task container */
+#tasks {
+    margin-top: 20px;
+}
+
+/* Individual task styles */
+.to-do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.to-do:hover {
+    background-color: #f9f9f9;
+}
+
+.to-do p {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+}
+
+.to-do .task-buttons {
+    margin-left: 10px;
+}
+
+.to-do .task-buttons button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.to-do .task-buttons button:hover {
+    background-color: #e53935;
+}
+
+img {
+    width: 20px;
+    height: 20px;    
+    border: 0;
+    vertical-align: middle;
+}
+
+.finished {
+    opacity: 0.7;
+    text-decoration: line-through;
+    background-color: #f0f0f0;
+}
+
+.hidden {
+    display: none;
+}
