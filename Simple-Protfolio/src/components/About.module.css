@@ -1,0 +1,38 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap'); /* Ensure Poppins is imported */
+
+section {
+  scroll-margin-top: 60px; /* Adjust this value to match your navbar height */
+}
+
+
+/* About Section */
+.container {
+  max-width: 900px; /* Limit container width for readability */
+  margin: auto; /* Center the container */
+}
+
+.about-title {
+  color: #317489; /* Heading color from the provided palette */
+  font-family: 'Poppins', sans-serif; /* Modern font family */
+  font-weight: 700; /* Bold font weight for the heading */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.about-text {
+  color: #333; /* Dark text color for readability */
+  font-family: 'Roboto', sans-serif; /* Modern font family for body text */
+  font-weight: 400; /* Normal font weight for body text */
+  line-height: 1.6; /* Increased line height for better readability */
+  padding: 0 1rem; /* Padding on sides for spacing */
+  text-align: justify; /* Justify text for a clean look */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-text {
+    padding: 0 0.5rem; /* Reduce padding on smaller screens */
+  }
+}

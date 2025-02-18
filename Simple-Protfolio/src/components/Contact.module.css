@@ -1,0 +1,71 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Container for the Contact Form */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px; /* Added padding to container */
+    background: #f9f9f9; /* Light background for better readability */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for container */
+    font-family: 'Roboto', sans-serif; /* Font family for the entire container */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    color: #333; /* Dark text color for readability */
+  font-family: 'Roboto', sans-serif; /* Modern font family for body text */
+  font-weight: 400; /* Normal font weight for body text */
+}
+
+/* Form Control */
+.form-control {
+    width: 100%;
+    padding: 12px; /* Increased padding for better touch area */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif; /* Font family for form controls */
+    font-size: 16px; /* Slightly larger font size for better readability */
+    line-height: 1.5; /* Line height for better readability */
+}
+
+/* Submit Button */
+.btn {
+    padding: 12px 24px; /* Increased padding for a larger button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* Font family for button */
+    font-weight: 600; /* Bold font weight for button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; /* Font family for social links */
+}
+
+.social-links img {
+    margin-right: 10px;
+}

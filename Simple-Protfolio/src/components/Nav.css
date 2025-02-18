@@ -1,0 +1,30 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Navigation Bar */
+.navbar {
+  background-color: #314889; /* Primary color */
+}
+
+.navbar-brand {
+  color: #ffffff; /* Light text for the brand name */
+  font-family: 'Poppins', sans-serif; /* Modern font family */
+  font-weight: 700; /* Bold font weight */
+}
+
+.nav-link {
+  color: #f8f9fa; /* Light color for the links */
+  font-family: 'Roboto', sans-serif; /* Modern font family */
+  font-weight: 400; /* Normal font weight */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #317489; /* Color on hover */
+}
+
+.nav-link.active {
+  color: #463189; /* Active link color */
+  font-weight: 600; /* Slightly bolder active link */
+}

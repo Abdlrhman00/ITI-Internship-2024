@@ -1,0 +1,70 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* Skills Section */
+.container {
+  max-width: 900px; /* Limit container width for readability */
+  margin: auto; /* Center the container */
+  padding: 0 1rem; /* Add some padding for spacing */
+}
+
+.heading {
+  color: #317489; /* Heading color from the provided palette */
+  font-family: 'Poppins', sans-serif; /* Modern font family */
+  font-weight: 700; /* Bold font weight for the heading */
+  text-align: center; /* Center align the heading */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd; /* Light border for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card */
+    background: #ffffff; /* White background for the card */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    padding: 20px; /* Add padding inside the card */
+  }
+  
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.card-body {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Font for card text */
+}
+
+.card-title {
+  color: #317489; /* Heading color from the provided palette */
+  font-family: 'Poppins', sans-serif; /* Modern font for the card title */
+  font-weight: 700; /* Bold font weight for the card title */
+}
+
+.description-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background for overlay */
+  color: white;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif; /* Font for overlay text */
+  text-align: center; /* Center align text in overlay */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border at the top of overlay */
+}
+
+.card-text {
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem; /* Reduce padding on smaller screens */
+  }
+}
